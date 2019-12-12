@@ -35,7 +35,6 @@
     created: function() {
       this.axios.get("https://v2.jinrishici.com/info")
         .then(res => {
-          console.log(res.data.data.weatherData.temperature);
           this.wendu = res.data.data.weatherData.temperature;
           this.tianqi  = res.data.data.weatherData.weather;
           this.address = res.data.data.region

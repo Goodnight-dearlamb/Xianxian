@@ -1,7 +1,7 @@
 <template>
   <div id="Main">
     <XNav />
-  <Message v-for="item in list" :name="item.name" :content="item.content" :time="item.time"></Message>
+  <Message v-for="item in list" :key="item.id" :name="item.name" :content="item.content" :time="item.time"></Message>
   </div>
 </template>
 
